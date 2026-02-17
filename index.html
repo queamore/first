@@ -25,6 +25,285 @@
   <a class="btn" href="kontakt.html">Kontakt aufnehmen</a>
 </div>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Inter,sans-serif;
+  background:#eaf1ff;
+  padding-top:70px;
+}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#047094;
+  padding:15px 10%;
+  display:flex;
+  justify-content:flex-end;
+  z-index:999;
+}
+
+nav a{
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* HERO */
+.hero{
+  background:#047094;
+  color:white;
+  text-align:center;
+  padding:120px 10%;
+  border-radius:0 0 40px 40px;
+}
+
+.hero h1{
+  font-family:'Dancing Script', cursive;
+  font-size:72px;
+  letter-spacing:2px;
+}
+
+.btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 40px;
+  border-radius:40px;
+  background:white;
+  color:#047094;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  padding:90px 10%;
+}
+
+h2{
+  text-align:center;
+  font-family:'Dancing Script', cursive;
+  font-size:42px;
+  color:#2b4f6b;
+  margin-bottom:40px;
+}
+
+/* Profil Text in Dancing Script */
+#profil, #profil .about-text{
+  font-family:'Dancing Script', cursive;
+  font-size:22px;
+  text-align:center;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+/* EXPERTISE */
+.grid{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.box{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  font-weight:600;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* PORTFOLIO */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.portfolio-card{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.portfolio-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* CONTACT */
+.contact-form{
+  max-width:500px;
+  margin:0 auto;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border-radius:10px;
+  border:1px solid #047094;
+  font-size:16px;
+}
+
+.contact-form button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:#047094;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#047094;
+  color:white;
+  text-align:center;
+  padding:40px;
+  margin-top:80px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+  .hero h1{font-size:45px}
+  nav{justify-content:center}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#profil">Profil</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div class="hero">
+<h1>Built on Vision</h1>
+<p>Digitale Lösungen – modern, zuverlässig, kreativ.</p>
+<a class="btn" href="#kontakt">Kontakt aufnehmen</a>
+</div>
+
+<section id="profil">
+<h2>Profil</h2>
+
+<p class="about-text">
+Meine Reise begann leise – mit kleinen Webseiten für meinen privaten Umkreis,  
+geboren aus Neugier und der Sehnsucht, Gedanken in digitale Formen zu kleiden.
+</p>
+
+<p class="about-text">
+Aus Gedanken wurde Klarheit. Aus Ideen Eleganz.  
+Heute erschaffe ich Produkte mit Seele – ruhig, präzise und mit Liebe zum Detail.
+</p>
+
+<p class="about-text">
+Ich glaube an Qualität, an stille Perfektion und an Lösungen,  
+die wirken, ohne laut zu sein.
+</p>
+
+</section>
+
+<section id="expertise">
+<h2>Expertise</h2>
+
+<div class="grid">
+<div class="box">Systemdesign</div>
+<div class="box">Datenbanken</div>
+<div class="box">Technische Beratung</div>
+<div class="box">Projektbegleitung</div>
+<div class="box">Software Engineering</div>
+<div class="box">Web Engineering</div>
+<div class="box">Mockups</div>
+<div class="box">Nutzungserlebnisse</div>
+<div class="box">Process Mining</div>
+<div class="box">Online-Fragebögen</div>
+<div class="box">Prototyping</div>
+<div class="box">Und vieles mehr</div>
+</div>
+
+</section>
+
+<section id="portfolio">
+<h2>Portfolio</h2>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-card">
+<img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg">
+<h3>Web Plattform</h3>
+<p>Kundenverwaltung</p>
+</div>
+
+<div class="portfolio-card">
+<img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg">
+<h3>Mobile App</h3>
+<p>Tracking System</p>
+</div>
+
+<div class="portfolio-card">
+<img src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg">
+<h3>Dashboard</h3>
+<p>Datenanalyse</p>
+</div>
+
+<div class="portfolio-card">
+<img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg">
+<h3>Automation</h3>
+<p>Business Prozesse</p>
+</div>
+
+<div class="portfolio-card">
+<img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg">
+<h3>Cloud Projekt</h3>
+<p>Backend‑Architektur und Cloud‑Lösungen</p>
+</div>
+
+<div class="portfolio-card">
+<img src="https://images.pexels.com/photos/1181253/pexels-photo-1181253.jpeg">
+<h3>Business Website</h3>
+<p>Corporate Design</p>
+</div>
+
+</div>
+</section>
+
+<section id="kontakt">
+<h2>Kontakt</h2>
+
+<p></p>
+
+<div class="contact-form">
+<input placeholder="Name">
+<input placeholder="E-Mail">
+<textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+<button>Senden</button>
+</div>
+
+</section>
 <footer>
 © 2026 Built on Vision
 </footer>
