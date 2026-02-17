@@ -1,19 +1,18 @@
-/* style.css */
-
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
   font-family:Inter,sans-serif;
   background:#eaf1ff;
-  padding-top:70px;
+  padding-top:80px;
 }
 
+/* NAVIGATION */
 nav{
   position:fixed;
   top:0;
   width:100%;
   background:#047094;
-  padding:15px 10%;
+  padding:18px 10%;
   display:flex;
   justify-content:flex-end;
   z-index:999;
@@ -21,9 +20,165 @@ nav{
 
 nav a{
   color:white;
-  margin-left:25px;
+  margin-left:30px;
   text-decoration:none;
   font-weight:600;
+  transition:.3s;
 }
 
-/* Rest deiner Styles unverändert */
+nav a:hover{
+  opacity:.7;
+}
+
+nav a.active{
+  border-bottom:2px solid white;
+  padding-bottom:5px;
+}
+
+/* HERO */
+.hero{
+  background:#047094;
+  color:white;
+  text-align:center;
+  padding:140px 10%;
+  border-radius:0 0 40px 40px;
+}
+
+.hero h1{
+  font-family:'Dancing Script', cursive;
+  font-size:72px;
+}
+
+.btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 40px;
+  border-radius:40px;
+  background:white;
+  color:#047094;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 10%;
+}
+
+h2{
+  text-align:center;
+  font-family:'Dancing Script', cursive;
+  font-size:42px;
+  color:#2b4f6b;
+  margin-bottom:50px;
+}
+
+.about-text{
+  font-family:'Dancing Script', cursive;
+  font-size:22px;
+  text-align:center;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+/* EXPERTISE */
+.grid{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.box{
+  background:white;
+  padding:22px;
+  border-radius:20px;
+  text-align:center;
+  font-weight:600;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  transition:.3s;
+}
+
+.box:hover{
+  transform:translateY(-5px);
+}
+
+/* PORTFOLIO */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.portfolio-card{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  transition:.3s;
+}
+
+.portfolio-card:hover{
+  transform:translateY(-8px);
+}
+
+.portfolio-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+
+/* CONTACT */
+.contact-form{
+  max-width:500px;
+  margin:0 auto;
+  background:white;
+  padding:35px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border-radius:10px;
+  border:1px solid #047094;
+  font-size:16px;
+}
+
+.contact-form button{
+  margin-top:25px;
+  padding:12px 30px;
+  border:none;
+  border-radius:25px;
+  background:#047094;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.contact-form button:hover{
+  opacity:.8;
+}
+
+/* FOOTER */
+footer{
+  background:#047094;
+  color:white;
+  text-align:center;
+  padding:40px;
+  margin-top:80px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+  .hero h1{font-size:45px}
+  nav{justify-content:center}
+}
